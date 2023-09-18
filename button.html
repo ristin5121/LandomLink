@@ -1,0 +1,74 @@
+<head>
+  <script language="JavaScript">
+    let select = [];
+    for (i = 0; i < 25; i++) {
+      randomNum = Math.floor(Math.random() * 25) + 1;
+      if (select.indexOf(randomNum) === -1) {
+        select.push(randomNum);
+      } else {
+        i--;
+      }
+    }
+    console.log(select);
+    function go_to(url) {
+      var openNewWindow = window.open("about:blank");
+      openNewWindow.location.href = url;
+    }
+    i = 0;
+    function rand_link() {
+      var a;
+      i += 1;
+      console.log(select);
+      a = select[i];
+      if (a == 1) go_to("https://youtu.be/d1BqeqVJWyI?t=42");
+      if (a == 2) go_to("https://youtu.be/Ec30CpVqWIo");
+      if (a == 3) go_to("https://youtu.be/dcfPr4IN2MM");
+      if (a == 4) go_to("https://youtu.be/8nlnJDNaj78");
+      if (a == 5) go_to("https://youtu.be/3iR3bJKk1Xc");
+      if (a == 6) go_to("https://youtu.be/twkVkEV6l-s");
+      if (a == 7) go_to("https://youtu.be/v2Zl8DfDly0");
+      if (a == 8)
+        go_to("https://youtu.be/oOmcs7FG8OA?si=tOE9_q7xYUjVHr0L&t=23");
+      if (a == 9) go_to("https://youtu.be/Ry0fkd3C0_c?t=32");
+      if (a == 10)
+        go_to("https://youtu.be/f7r2dHJ8SYY?si=f64w1y1e47J15R26&t=4");
+      if (a == 11) go_to("https://youtu.be/IueFDoUxPt8");
+      if (a == 12) go_to("https://youtu.be/9gr5tAlUCIY");
+      if (a == 13) go_to("https://youtu.be/qG5Z9LzbQpQ?t=7");
+      if (a == 14) go_to("https://youtu.be/s7vJcUogrEI");
+      if (a == 15)
+        go_to("https://youtu.be/oh1IrqxzCZ0?si=59qQKZ970r7O61Zu&t=8");
+      if (a == 16)
+        go_to("https://youtu.be/1vDxlnJVvW8?si=N0ICYKt0Rg8nKqUy&t=7");
+      if (a == 17) go_to("https://youtu.be/fexLfIqpo8M");
+      if (a == 18)
+        go_to("https://youtu.be/NWWbA5H5pEs?si=GkvWLAnIBdmPEh1w&t=8");
+      if (a == 19) go_to("https://youtu.be/9OdIl8Tf4CI");
+      if (a == 20) go_to("https://www.youtube.com/watch?v=h7O4pu9hkvg");
+      if (a == 21)
+        go_to("https://youtu.be/B9q7zDwUEz0?si=IdULVPhysWTBR6FD&t=17");
+      if (a == 22)
+        go_to("https://youtu.be/PKTgebnVSS8?si=0iCYbrTSKDDoTPxW&t=16");
+      if (a == 23) go_to("https://youtu.be/97_VJve7UVc");
+      if (a == 24)
+        go_to("https://youtu.be/UmGIiBfWI0E?si=Cba3Rst5uofAtAzC&t=43");
+      if (a == 25) go_to("https://youtu.be/jRHoKZRYBlY?si=zRLYbIdxpfcrG8bU");
+    }
+    // End -->
+  </script>
+
+  <!-- STEP TWO:  Paste this last code into the BODY of your HTML document -->
+
+  <body>
+    <center>
+      <form name="myForm">
+        <input
+          type="button"
+          name="myButton"
+          value="Random link"
+          onClick="rand_link()"
+        />
+      </form>
+    </center>
+  </body>
+</head>
